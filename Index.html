@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Recetario de Cocina</title>
+    <script>
+
+        function resaltarTitulo() {
+            const titulo = document.getElementById("titulo");
+            titulo.style.backgroundColor = "#caf0f8";
+            titulo.style.color = "#03045e";
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="titulo" onclick="resaltarTitulo()">Recetario de Cocina</h1>
+    <script src="Code.js"></script>
+    <p class="intro_text">
+        ¡Bienvenido! Aquí encontrarás recetas fáciles y deliciosas para todos los gustos.<br>
+        Explora las diferentes secciones y descubre cómo preparar tus platillos favoritos paso a paso.
+    </p>
+    <ul>
+        <li>
+            <h2><a href="enlaces/carnes.html" title="Receta de Carne">Receta de Carne</a></h2>
+            <p>Aprende a preparar una deliciosa carne con pasos sencillos y rápidos.</p>
+        </li>
+        <li>
+            <h2><a href="enlaces/pollo.html" title="Receta de Pollo">Receta de Pollo</a></h2>
+            <p>Un pollo jugoso y sabroso con ingredientes fáciles de conseguir.</p>
+        </li>
+        <li>
+            <h2><a href="enlaces/pescado.html" title="Receta de Pescado">Receta de Pescado</a></h2>
+            <p>Pescado fresco preparado con técnicas simples y mucho sabor.</p>
+        </li>
+        <li>
+            <h2><a href="enlaces/otros.html">Otras Recetas</a></h2>
+            <p>Aquí encontrarás recetas variadas como sopas, ensaladas y más.</p>
+        </li>
+    </ul>
+    <div class="contacto-cuadro">
+        <h3><strong>Contacto</strong></h3>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" main="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" main="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea main="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>
